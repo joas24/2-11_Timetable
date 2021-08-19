@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2-11 2학기 시간표</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div id="all">
+        <div id="baro">
+            <a href="https://meet.google.com/lookup/dmlikrhtjy" target="_blank"><img src="meeting.jpg"></a>
+            <a href="https://classroom.google.com/c/Mjc3NjYzNzYzMTAx" target="_blank"><img src="classroom.jpg"></a>
+            <a href="https://sungil.riroschool.kr/" target="_blank"><img src="riro.png"></a>
+            <a href="https://meet.google.com/lookup/e57kzdvipy" target="_blank"><img src="china.jpg"></a>
+            <a href="https://meet.google.com/lookup/hnwc45zzew" target="_blank"><img src="earth.png"></a>
+        </div>
+        <div>
+            <table border="1">
+                <caption>2-11 2학기 시간표</caption>
+                <colgroup>
+                    <col style="background:rgb(228, 243, 95)">
+                    <col style="background:rgb(255, 255, 255)">
+                    <col style="background:rgb(255, 255, 255)">
+                    <col style="background:rgb(255, 255, 255)">
+                    <col style="background:rgb(255, 255, 255)">
+                    <col style="background:rgb(255, 255, 255)">
+                    <col style="background:rgb(255, 255, 255)">
+                    <col style="background:rgb(228, 243, 95)">
+                </colgroup>
+                <thead style="background:whitesmoke">
+                    <tr>
+                        <th>시작</th>
+                        <th>교시</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>끝</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00</td>
+                        <td>1</td>
+                        <td><a href="https://bit.ly/김재천" target="_blank">체육</a></td>
+                        <td>수학</td>
+                        <td>영어</td>
+                        <td>생명</td>
+                        <td>여행</td>
+                        <td>09:45</td>
+                    </tr>
+                    <tr>
+                        <td>09:55</td>
+                        <td>2</td>
+                        <td><a href="https://meet.google.com/lookup/hjxlhskgmd" target="_blank">음악</a></td>
+                        <td><a href="https://bit.ly/김재천" target="_blank">체육</a></td>
+                        <td><a href="https://meet.google.com/lookup/annxuq53hg" target="_blank">물리</a></td>
+                        <td>국어</td>
+                        <td>국어</td>
+                        <td>10:40</td>
+                    </tr>
+                    <tr>
+                        <td>10:50</td>
+                        <td>3</td>
+                        <td>수학</td>
+                        <td><a href="https://meet.google.com/lookup/annxuq53hg" target="_blank">물리</a></td>
+                        <td>생명</td>
+                        <td>화학</td>
+                        <td>화학</td>
+                        <td>11:40</td>
+                    </tr>
+                    <tr>
+                        <td>12:40</td>
+                        <td>4</td>
+                        <td>영어</td>
+                        <td><a href="https://meet.google.com/lookup/fekblcmqer" target="_blank">일어</a></td>
+                        <td>수학</td>
+                        <td>수학</td>
+                        <td>자율</td>
+                        <td>13:25</td>
+                    </tr>
+                    <tr>
+                        <td>13:35</td>
+                        <td>5</td>
+                        <td>여행</td>
+                        <td>영어</td>
+                        <td><a href="https://meet.google.com/lookup/fekblcmqer" target="_blank">일어</a></td>
+                        <td>기하</td>
+                        <td>자율</td>
+                        <td>14:20</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>6</td>
+                        <td>기하</td>
+                        <td>국어</td>
+                        <td>국어</td>
+                        <td>영어</td>
+                        <td>자율</td>
+                        <td>15:15</td>
+                    </tr>
+                    <tr>
+                        <td>15:25</td>
+                        <td>7</td>
+                        <td>진로</td>
+                        <td>생명</td>
+                        <td>화학</td>
+                        <td><a href="https://meet.google.com/lookup/annxuq53hg" target="_blank">물리</a></td>
+                        <td>자율</td>
+                        <td>16:10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><br>
+            <div style="text-align: center;">
+                <input type="button" value="월요일" onclick="none(); block.mon();">
+                <input type="button" value="화요일" onclick="none(); block.tue();">
+                <input type="button" value="수요일" onclick="none(); block.wed();">
+                <input type="button" value="목요일" onclick="none(); block.thu();">
+                <input type="button" value="금요일" onclick="none(); block.fri();">
+            </div>
+
+            <div id="second">
+                <table id="mon" style="display:none" border="1">
+                    <caption>월요일</caption>
+
+                    <tr style="background:rgb(228, 243, 95)">
+                        <td>09:00</td>
+                        <td>09:55</td>
+                        <td>10:50</td>
+                        <td>12:40</td>
+                        <td>13:35</td>
+                        <td>14:30</td>
+                        <td>15:25</td>
+                    </tr>
+                    <tr>
+                        <td>1교시</td>
+                        <td>2교시</td>
+                        <td>3교시</td>
+                        <td>4교시</td>
+                        <td>5교시</td>
+                        <td>6교시</td>
+                        <td>7교시</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://bit.ly/김재천" target="_blank">체육</a></td>
+                        <td><a href="https://meet.google.com/lookup/hjxlhskgmd" target="_blank">음악</a></td>
+                        <td>수학</td>
+                        <td>영어</td>
+                        <td>여행</td>
+                        <td>기하</td>
+                        <td>진로</td>
+                    </tr>
+                    <tr style="background:rgb(228, 243, 95)">
+                        <td>09:45</td>
+                        <td>10:40</td>
+                        <td>11:40</td>
+                        <td>13:25</td>
+                        <td>14:20</td>
+                        <td>15:15</td>
+                        <td>16:10</td>
+                    </tr>
+
+                </table>
+
+                <table id="tue" style="display:none" border="1">
+                    <caption>화요일</caption>
+                    <tbody>
+                        <tr style="background:rgb(228, 243, 95)">
+                            <td>09:00</td>
+                            <td>09:55</td>
+                            <td>10:50</td>
+                            <td>12:40</td>
+                            <td>13:35</td>
+                            <td>14:30</td>
+                            <td>15:25</td>
+                        </tr>
+                        <tr>
+                            <td>1교시</td>
+                            <td>2교시</td>
+                            <td>3교시</td>
+                            <td>4교시</td>
+                            <td>5교시</td>
+                            <td>6교시</td>
+                            <td>7교시</td>
+                        </tr>
+                        <tr>
+                            <td>수학</td>
+                            <td><a href="https://bit.ly/김재천" target="_blank">체육</a></td>
+                            <td><a href="https://meet.google.com/lookup/annxuq53hg" target="_blank">물리</a></td>
+                            <td><a href="https://meet.google.com/lookup/fekblcmqer" target="_blank">일어</a></td>
+                            <td>영어</td>
+                            <td>국어</td>
+                            <td>생명</td>
+                        </tr>
+                        <tr style="background:rgb(228, 243, 95)">
+                            <td>09:45</td>
+                            <td>10:40</td>
+                            <td>11:40</td>
+                            <td>13:25</td>
+                            <td>14:20</td>
+                            <td>15:15</td>
+                            <td>16:10</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="wed" style="display:none" border="1">
+                    <caption>수요일</caption>
+                    <tbody>
+                        <tr style="background:rgb(228, 243, 95)">
+                            <td>09:00</td>
+                            <td>09:55</td>
+                            <td>10:50</td>
+                            <td>12:40</td>
+                            <td>13:35</td>
+                            <td>14:30</td>
+                            <td>15:25</td>
+                        </tr>
+                        <tr>
+                            <td>1교시</td>
+                            <td>2교시</td>
+                            <td>3교시</td>
+                            <td>4교시</td>
+                            <td>5교시</td>
+                            <td>6교시</td>
+                            <td>7교시</td>
+                        </tr>
+                        <tr>
+                            <td>영어</td>
+                            <td><a href="https://meet.google.com/lookup/annxuq53hg" target="_blank">물리</a></td>
+                            <td>생명</td>
+                            <td>수학</td>
+                            <td><a href="https://meet.google.com/lookup/fekblcmqer" target="_blank">일어</a></td>
+                            <td>국어</td>
+                            <td>화학</td>
+                        </tr>
+                        <tr style="background:rgb(228, 243, 95)">
+                            <td>09:45</td>
+                            <td>10:40</td>
+                            <td>11:40</td>
+                            <td>13:25</td>
+                            <td>14:20</td>
+                            <td>15:15</td>
+                            <td>16:10</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="thu" style="display:none" border="1">
+                    <caption>목요일</caption>
+                    <tbody>
+                        <tr style="background:rgb(228, 243, 95)">
+                            <td>09:00</td>
+                            <td>09:55</td>
+                            <td>10:50</td>
+                            <td>12:40</td>
+                            <td>13:35</td>
+                            <td>14:30</td>
+                            <td>15:25</td>
+                        </tr>
+                        <tr>
+                            <td>1교시</td>
+                            <td>2교시</td>
+                            <td>3교시</td>
+                            <td>4교시</td>
+                            <td>5교시</td>
+                            <td>6교시</td>
+                            <td>7교시</td>
+                        </tr>
+                        <tr>
+                            <td>생명</td>
+                            <td>국어</td>
+                            <td>화학</td>
+                            <td>수학</td>
+                            <td>기하</td>
+                            <td>영어</td>
+                            <td><a href="https://meet.google.com/lookup/annxuq53hg" target="_blank">물리</a></td>
+                        </tr>
+                        <tr style="background:rgb(228, 243, 95)">
+                            <td>09:45</td>
+                            <td>10:40</td>
+                            <td>11:40</td>
+                            <td>13:25</td>
+                            <td>14:20</td>
+                            <td>15:15</td>
+                            <td>16:10</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="fri" style="display:none" border="1">
+                    <caption>금요일</caption>
+                    <tbody>
+                        <tr style="background:rgb(228, 243, 95)">
+                            <td>09:00</td>
+                            <td>09:55</td>
+                            <td>10:50</td>
+                            <td>12:40</td>
+                            <td>13:35</td>
+                            <td>14:30</td>
+                            <td>15:25</td>
+                        </tr>
+                        <tr>
+                            <td>1교시</td>
+                            <td>2교시</td>
+                            <td>3교시</td>
+                            <td>4교시</td>
+                            <td>5교시</td>
+                            <td>6교시</td>
+                            <td>7교시</td>
+                        </tr>
+                        <tr>
+                            <td>여행</td>
+                            <td>국어</td>
+                            <td>화학</td>
+                            <td>자율</td>
+                            <td>자율</td>
+                            <td>자율</td>
+                            <td>자율</td>
+                        </tr>
+                        <tr style="background:rgb(228, 243, 95)">
+                            <td>09:45</td>
+                            <td>10:40</td>
+                            <td>11:40</td>
+                            <td>13:25</td>
+                            <td>14:20</td>
+                            <td>15:15</td>
+                            <td>16:10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <input type="button" id="j" value="j" onclick="$('#junhee').css('display', 'block')">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <img src="junhee.jpg" id="junhee" style="display:none">
+</body>
+</html>

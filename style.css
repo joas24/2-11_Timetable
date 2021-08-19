@@ -1,0 +1,46 @@
+table{
+    width:70%;
+    height:300px;
+    margin:0 auto;
+}
+td{
+    text-align: center;
+}
+a{
+    text-decoration:none;
+    color:rgb(153, 97, 13);
+    display:block;
+}
+img{
+    width: 50px;
+    margin: 10px;
+    margin-left: 20px;
+    box-shadow: 3px 3px 10px black;
+    text-align: center;
+}
+img:hover{
+    width: 120%;
+}
+input[type='button']{
+    margin: 5px;
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+input[type='button']:hover{
+    background-color: rgb(230, 230, 230);
+}
+input[type='button']:active{
+    background-color:gray;
+}
+#all{
+    display:grid;
+    grid-template-columns: 5% 1fr;
+}
+#j{
+    color:white;
+    text-shadow:3px 3px 15px black;
+    border:none;
+}
+
+
