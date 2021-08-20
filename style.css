@@ -11,14 +11,14 @@ a{
     color:rgb(153, 97, 13);
     display:block;
 }
-img{
+#baro img{
     width: 50px;
     margin: 10px;
     margin-left: 20px;
     box-shadow: 3px 3px 10px black;
     text-align: center;
 }
-img:hover{
+#baro img:hover{
     width: 120%;
 }
 input[type='button']{
@@ -38,9 +38,23 @@ input[type='button']:active{
     grid-template-columns: 5% 1fr;
 }
 #j{
-    color:white;
-    text-shadow:3px 3px 15px black;
+    color:powderblue;
     border:none;
+    text-align: right;
+    background-color:powderblue;
+}
+#shs{
+    width:50%;
+}
+body{
+    background-color:powderblue;
+}
+*::selection{
+    background-color:white;
+}
+#shs{
+    width:30%;
+    margin: 0 auto;
 }
 
 
