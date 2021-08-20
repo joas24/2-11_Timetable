@@ -21,7 +21,7 @@ a{
 #baro img:hover{
     width: 120%;
 }
-input[type='button']{
+.yoil{
     margin: 5px;
     background-color:white;
     border: 1px solid black;
