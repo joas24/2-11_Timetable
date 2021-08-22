@@ -56,5 +56,11 @@ body{
     width:30%;
     margin: 0 auto;
 }
+#jayool + #jun{
+    display:none;
+}
+#jayool:active + #jun{
+    display:block;
+}
 
 
