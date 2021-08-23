@@ -27,10 +27,10 @@ a{
     border: 1px solid black;
     border-radius: 5px;
 }
-input[type='button']:hover{
+.yoil:hover{
     background-color: rgb(230, 230, 230);
 }
-input[type='button']:active{
+.yoil:active{
     background-color:gray;
 }
 #all{
@@ -40,7 +40,6 @@ input[type='button']:active{
 #j{
     color:powderblue;
     border:none;
-    text-align: right;
     background-color:powderblue;
 }
 #shs{
@@ -62,5 +61,24 @@ body{
 #jayool:active + #jun{
     display:block;
 }
+.yel::selection{
+    color:yellow;
+    text-shadow: 2px 2px 5px yellow;
+    background-color:powderblue;
+}
+.blu::selection{
+    color:blue;
+    text-shadow: 2px 2px 5px blue;
+    background-color:powderblue;
+}
+.red::selection{
+    color:red;
+    text-shadow: 2px 2px 5px red;
+    background-color:powderblue;
+}
+h1{
+    text-align:center;
+}
+
 
 
