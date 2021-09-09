@@ -5,7 +5,10 @@ table{
 }
 td{
     text-align: center;
+    font-size: 25px;
+    padding: 10px;
 }
+
 a{
     text-decoration:none;
     color:rgb(153, 97, 13);
@@ -19,7 +22,10 @@ a{
     text-align: center;
 }
 #baro img:hover{
-    width: 120%;
+    width: 55px;
+}
+#yesool:hover{
+    width: 300px;
 }
 .yoil{
     margin: 5px;
@@ -49,7 +55,7 @@ body{
     background-color:powderblue;
 }
 *::selection{
-    background-color:white;
+    background-color:rgb(9, 255, 0);
 }
 #shs{
     width:30%;
