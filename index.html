@@ -13,7 +13,7 @@
     <h1><span class="yel">2-11 </span><span class="blu">2학기 </span><span class="red">시간표</span></h1>
     <div id="all">
         <div id="baro">
-            <a href="https://meet.google.com/lookup/dmlikrhtjy" target="_blank" title="2-11 행아웃 미트"><img src="meeting.jpg"></a>
+            <a href="https://meet.google.com/nrb-hmsv-dgf" target="_blank" title="2-11 행아웃 미트"><img src="meeting.jpg"></a>
             <a href="https://classroom.google.com/c/Mjc3NjYzNzYzMTAx" target="_blank" title="2-11 클래스룸"><img src="classroom.jpg"></a>
             <a href="https://sungil.riroschool.kr/" target="_blank"><img src="riro.png" title="리로스쿨"></a>
             <a href="https://meet.google.com/lookup/e57kzdvipy" target="_blank" title="중국어 행아웃 미트"><img src="china.jpg"></a>
@@ -125,7 +125,7 @@
                 <input type="button" value="화요일" class="yoil" onclick="none(); block.tue();">
                 <input type="button" value="수요일" class="yoil" onclick="none(); block.wed();">
                 <input type="button" value="목요일" class="yoil" onclick="none(); block.thu();">
-                <input type="button" value="금요일" class="yoil" onclick="none(); block.fri();">
+                <input type="button" value="금요일" class="yoil" onclick="none(); block.fri();">               
             </div>
 
             <div id="second">
@@ -340,6 +340,13 @@
                     </tbody>
                 </table>
             </div>
+
+            <script>
+                var date = new Date();
+                var day = date.getDay;
+                if(day == 2) $('tue').css('display', 'table');
+            </script>
+            
         </div>
     </div>
     
