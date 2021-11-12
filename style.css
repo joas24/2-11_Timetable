@@ -14,6 +14,9 @@ a{
     color:rgb(0, 75, 88);
     display:block;
 }
+a:hover{
+    text-shadow:1px 1px 1px rgb(0, 75, 88);
+}
 #baro img{
     width: 50px;
     margin: 10px;
